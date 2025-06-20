@@ -80,3 +80,38 @@ a:hover {
   }
 
   section h2 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  a {
+    word-break: break-all;
+  }
+}
+.icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  filter: grayscale(100%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.contact-link {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #0055aa;
+  text-decoration: underline;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
