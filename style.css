@@ -61,36 +61,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* 📱 MOBILE RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  section {
-    padding: 15px;
-  }
-
-  section h2 {
-    font-size: 1.2rem;
-  }
-
-  ul {
-    padding-left: 15px;
-  }
-
-  a {
-    word-break: break-all;
-  }
-}
 .icon {
   vertical-align: middle;
   margin-right: 8px;
@@ -126,13 +96,14 @@ a:hover {
   }
 }
 
-/* Apply animation to sections */
+/* Animate all sections */
 section {
   animation: fadeInUp 0.8s ease-in-out;
   animation-fill-mode: both;
+  opacity: 0;
 }
 
-/* Add delay to make it look smooth when scrolling */
+/* Add delays for smooth scroll-in */
 section:nth-of-type(1) {
   animation-delay: 0.2s;
 }
@@ -142,7 +113,26 @@ section:nth-of-type(2) {
 section:nth-of-type(3) {
   animation-delay: 0.6s;
 }
-header {
-  animation: fadeInUp 1s ease-in-out;
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list li {
+  background-color: #e8f0fe;
+  color: #222;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
 }
 
