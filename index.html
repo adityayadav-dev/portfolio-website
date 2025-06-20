@@ -3,44 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya Yadav | Portfolio</title>
+  <title>Aditya Yadav - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Hi, I'm Aditya 👋</h1>
-    <p>Aspiring Developer | BTech IT | Learning Web Dev</p>
+    <h1>Aditya Yadav</h1>
+    <p>Aspiring Software Developer | BTech IT Student</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a 1st-year BTech IT student from Mumbai University with a CGPA of 8.95. I am currently learning HTML, CSS, and JavaScript, and my goal is to become a great software engineer.</p>
+    <p>
+      I’m a 1st-year BTech IT student with a CGPA of 8.95 from Mumbai. I'm currently learning HTML, CSS, and JavaScript, building projects, and aiming to become a great software developer.
+    </p>
   </section>
 
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon... 🚧</p>
+  </section>
+  
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (Learning)</li>
-    </ul>
-  </section>
-
- <section id="contact">
-  <h2>Contact</h2>
-
-  <p>
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="20" class="icon">
-    <a href="https://github.com/adityayadav-dev" target="_blank" class="contact-link">adityayadav-dev</a>
-  </p>
-
-  <p>
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="20" class="icon">
-    <a href="https://www.linkedin.com/in/adityayadav-dev/" target="_blank" class="contact-link">adityayadav-dev</a>
-  </p>
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>🌐 HTML</li>
+    <li>🎨 CSS</li>
+    <li>⚙️ JavaScript (Learning)</li>
+    <li>🔧 Git</li>
+    <li>📁 GitHub</li>
+  </ul>
 </section>
 
 
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="20" class="icon">
+      <a href="https://github.com/adityayadav-dev" target="_blank" class="contact-link">adityayadav-dev</a>
+    </p>
+
+    <p>
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="20" class="icon">
+      <a href="https://www.linkedin.com/in/adityayadav-dev/" target="_blank" class="contact-link">adityayadav-dev</a>
+    </p>
+  </section>
+
+  <script>
+    // Make sections fade in after page loads
+    window.addEventListener("load", () => {
+      document.querySelectorAll("section").forEach(sec => {
+        sec.style.opacity = 1;
+      });
+    });
+  </script>
+
 </body>
 </html>
+
