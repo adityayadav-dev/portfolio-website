@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Yadav - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #555;
+            --accent-color: #000;
+            --border-color: #ccc;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: var(--primary-color);
+            background: #fff;
+        }
+
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 15mm;
+            /* Standard margin */
+            background: #fff;
+            position: relative;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 24pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: var(--accent-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .role {
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 9pt;
+            color: var(--primary-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            font-size: 0.8rem;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-header {
+            text-transform: uppercase;
+            font-size: 10pt;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent-color);
+        }
+
+        .section-content {
+            padding: 0;
+        }
+
+        /* Items (Education, Experience) */
+        .item {
+            margin-bottom: 1rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.2rem;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 11pt;
+            color: var(--accent-color);
+        }
+
+        .item-subtitle {
+            font-weight: 500;
+            font-size: 9pt;
+            color: var(--secondary-color);
+        }
+
+        .item-date {
+            font-size: 9pt;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .item-description {
+            font-size: 9.5pt;
+            color: var(--primary-color);
+            text-align: justify;
+        }
+
+        /* Skills List */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .skills-list li {
+            position: relative;
+            padding-left: 1rem;
+            width: 45%;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        /* Print Media Query */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+
+            body,
+            .resume-container {
+                width: 210mm;
+                /* height: 297mm; */
+                margin: 0;
+                padding: 15mm;
+                box-shadow: none;
+            }
+
+            .resume-container {
+                page-break-after: always;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        /* Helper for preview */
+        .preview-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            font-family: sans-serif;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        .preview-controls:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="window.print()" class="preview-controls no-print">Save as PDF</button>
+
+    <div class="resume-container">
+
+        <!-- Header -->
+        <header>
+            <h1>ADITYA YADAV</h1>
+            <div class="role">AI & Software Developer</div>
+            <div class="contact-info">
+                <!-- Placeholder Phone -->
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>7021139776</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@adityayadav.dev</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/adityayadav-dev</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me -->
+        <section>
+            <div class="section-header">ABOUT ME</div>
+            <div class="section-content">
+                <p class="item-description">
+                    BTech IT student focused on Artificial Intelligence, Machine Learning, and Large Language Models
+                    (LLMs).
+                    Passionate about building efficient, real-world solutions with strong foundations in Data Structures
+                    and Algorithms.
+                    Keen interest in financial management and scalable system architecture. Deeply committed to
+                    understanding
+                    complex systems from first principles.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <div class="section-header">EDUCATION</div>
+            <div class="section-content">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">BTech in Information Technology</span>
+                        <span class="item-date">2024 - Present</span>
+                    </div>
+                    <div class="item-subtitle">Mumbai University | India</div>
+                    <div class="item-description" style="margin-top: 0.2rem;">
+                        Current Academic Standing: 2nd Year <br>
+                        CGPA: 8.95
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects (Replacing Work Experience) -->
+        <section>
+            <div class="section-header">PROJECTS</div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">GlobeStay</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-subtitle">Full-Stack Accommodation Booking Platform</div>
+                <div class="item-description">
+                    Built a complete booking application using the MERN stack (MongoDB, Express, React, Node.js) with
+                    EJS templating.
+                    Implemented secure user authentication via Passport.js and integrated Cloudinary for robust image
+                    storage.
+                    Designed a responsive UI allowing users to list properties, view detailed descriptions, and manage
+                    bookings seamlessly, mimicking core Airbnb functionality.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Portfolio Website</span>
+                    <span class="item-date">2024</span>
+                </div>
+                <div class="item-subtitle">Personal Brand & Showcase</div>
+                <div class="item-description">
+                    Designed and developed a high-performance personal portfolio website focusing on modern web
+                    aesthetics.
+                    Utilized semantic HTML5 and advanced CSS3 animations for a polished user experience.
+                    Implemented interactive JavaScript elements including smooth scrolling, typing effects, and 3D tilt
+                    interactions to engage visitors.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <div class="section-header">SKILLS</div>
+            <div class="section-content">
+                <ul class="skills-list">
+                    <li><strong>Languages:</strong> C++, JavaScript, Python, HTML5, CSS3</li>
+                    <li><strong>Frameworks & Libraries:</strong> React, Node.js, Express.js</li>
+                    <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, MongoDB</li>
+                    <li><strong>Core Concepts:</strong> Data Structures & Algorithms, OOP, DBMS</li>
+                    <li><strong>Specializations:</strong> AI & Machine Learning, LLMs, Financial Analysis</li>
+                   
+                </ul>
+            </div>
+            
+        </section>
+        <li><strong>Specializations:</strong> AI & Machine Learning, LLMs, Financial Analysis</li>
+
+    </div>
+</body>
+
+</html>
